@@ -1,0 +1,245 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR');
+/* 나는 구글 폰트를 땡겨쓰겠다 */
+* { /* *은 전체 태그 선택자에 다 적용하겠다 */
+    font-family: 'Noto Sans KR', sans-serif; /* 글자 폰트 */
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: -5px;
+    line-height: 1.2;
+}
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* 패딩값에 의해 도형이나 칸이 패딩값만큼 늘어나는걸 방지 */
+}
+.visual {
+    background-image: url(../images/visual_bg.png);
+    background-position: center center; /* 수평기준 center 수직기준
+    center */
+    background-repeat: no-repeat; /* 배경이미지 반복 안함 */
+    height: 1080px;
+    padding: 400px;
+    box-sizing: border-box;
+    color: #fff;
+}
+a {
+    color: inherit; /* 상위 선택지에서 설정된 색상을 상속받음 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+}
+.wrapper {
+    width: 1280px;
+    margin: 0 auto; /* 블럭요소 화면 중앙 정렬, 위아래 0, 좌우는 auto */
+}
+
+.visual p {
+    color: #00fff2;
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.3;
+    letter-spacing: -1px; 
+}
+.visual a {
+    display: inline-block; /* 인라인은 글자 길이만큼 좌우 여백만 가능, 
+    크기지정 불가능, 대신 다른 개체를 옆에 붙일수 있음, 인라인-블럭은 상하
+    여백도 가능 */
+    color: #fff;
+    font-size: 30px;
+    border: 1px solid #fff; /* 테두리 */
+    padding: 10px 20px; /* 10px은 상하, 20px은 좌우 */
+    border-radius: 20px;
+}
+
+.intro {
+    height: 1000px;
+    text-align: center;
+    margin: 200px auto;
+}
+.intro p {
+    font-size: 80px;
+    font-weight: 900;
+}
+.intro p strong {
+    color: #999;
+    font-size: 100px;
+    font-weight: 700;
+    letter-spacing: -5px;
+}
+.intro a {
+    display: inline-block;
+    color: #3d3d3d;
+    font-size: 30px;
+    border: 1px dotted #3d3d3d;
+    /* solid : 실선, dotted : 점선, dashed : 스테치점선, donble : 이중선 */
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.service {
+    background-color: #ddd;
+    height: 800px;
+    padding: 100px 0 0 0 ; /* 상 우 하 좌 */
+}
+.service p {
+    font-size: 40px;
+    font-weight: 100;
+}
+.service p span {
+    font-size: 50px;
+    color: coral;
+    font-weight: 900;
+}
+.service p strong {
+    font-size: 80px;
+    color: maroon;
+}
+.service a {
+    display: inline-block;
+    color: #3d3d3d;
+    font-size: 30px;
+    border: 1px dotted #3d3d3d;
+    /* solid : 실선, dotted : 점선, dashed : 스테치점선, donble : 이중선 */
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.it {
+    background-image: url(../imges/it_bg.pug);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background: url(../images/it_bg.png) center center no-repeat ;
+    height: 1080px;
+   /* padding: 400px;  4면 전체 패딩이 400px */
+    /*padding: 400px 0;  상하 패딩 400px, 좌우 0 */
+   /* padding: 400px 0 0;  상 400px gk 0 whkdn 0 */
+   padding: 400px 0 0 0;
+   box-sizing: border-box; /* 패딩값만큼 공간이 밀리는걸 방지 */
+}
+.it strong {
+    font-weight: 700;
+    color: #ccc;
+    font-size: 40px;
+}
+.it p {
+    color: #fff;
+    f0.ont-size: 30px;
+    font height: 1.2;
+    font weight: 400;
+    margin: 0 0 40px 0;
+}
+.it a {
+    display: inline-block; /* 인라인 요소 a태그에 padding/border을 적용하기 위해서 준 값 */
+    color: #d9ff00;
+    font-size: 30px;
+    border: 3px dashed #d9ff00;
+/* solid : 실선, dotted : 점선, dashed : 스테치점선, double : 이중선 */
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.bbs {
+    margin: 200px 0 100px 0;
+    height: 700px;
+}
+    .bbs p {
+        color: #3d3d3d;
+        font-size: 50px;
+        line-height: 1.1;
+        font-weight: 400;
+        letter-spacing: -5px;
+        margin-top: 400px; / /* margin: 0 0 0; */
+    }
+    .bbs p span {
+        color: #999;
+    }
+    .bbs ul {
+        display: flex; /* 수평 수짓 배치 */
+        justify-content: space-between; /* 수평배치시 끝에 맞춰서 알아서 배치 */
+    }
+    ul li {
+        list-style: none;
+    }
+    .bbs ul li {
+        width: 250px;
+        margin: 0 40px 0;
+    }
+    .bbs ul li strong {
+        color: #999;
+        font-size: 20px;
+        display: block;
+        letter-spacing: normal;             
+    }
+.bbs ul li span {
+    color: #bbb;
+    font-size: 12px;
+    display: block;
+    letter-spacing: normal;
+    margin-top: 10px;
+}
+.bbs ul li img {
+    border: 1px solid #eee;
+    border-radius: 20px;
+    width: 100%;
+}
+.bbs .more {
+    text-align: center;
+    margin-top: 100px;
+}
+.bbs .more a {
+    color: #666;
+    text-decoration: none;
+    border-radius: 30px;   
+    border: 1px solid #3d3d3d;
+    padding: 5px 20px;
+    display: inline-block;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5); /* 본체로부터 좌우 상하 흐림 색상 */
+}
+.banner {
+    display: 500px;
+}
+.banner ul {
+    display: flex;
+}
+.banner ul li {
+    color: #fff;
+    width: 620px;
+    height: 150px;
+    border-radius: 25px;
+    padding: 30px 40px 0 40px;
+}
+.banner ul li {
+    background-color: dodgerblue;
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner ul li.cereer {
+    background-color: #73ff00;
+    margin: 0 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.banner ul li a {
+    color: #fff;
+    height: 30px;
+    text-decoration: none;
+    background-color: #333;
+    font-size: 14px;
+    letter-spacing: normal;
+    display: inline-block;
+    padding: 5px 10px;
+    width: 150px;
+    text-align: center
+    border-radius: 10px;
+    box-shadow: 5PX 5PX 
+}
+.banner ,title strong {
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    margin-top: -20px;
+    display: block;
+    
+}
+.banner .title a {
+    font-size: 20PX;
+    letter-spacing: -1px;
+}
